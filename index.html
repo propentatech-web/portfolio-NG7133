@@ -1,87 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon portfolio</title>
+    <title>Portfolio - Glory</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-    <center><h1>NGALEU YAMDJA GLORY</h1></center>
-    <strong><p>Etudiante en informatique - future ingenieure en genie logiciel</p></strong>
-    <center><img src="/home/ngaleu-yamdja-glory/portfolio_html/IMG_7424.JPG" alt="photo de NGALEU YAMDJA GLORY" width="400"></center>
+
     <nav>
         <ul>
-            <li><a href="#apropos">A propos</a></li>
-            <li><a href="#competences">Competences</a></li>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
             <li><a href="#parcours">Parcours</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    </header>
-    <section id="apropos">
-        <h2>A propos</h2>
-        <p>
-            je suis etudiante en informatique. Je m'interesse au developpement web et au genie logiciel. Mon objectif est de devenir ingenieure en genie logiciel et de creer des sites web et des applications pour les entreprises.
-    </p>
+
+    <section id="accueil" class="hero">
+        <div class="hero-container">
+            <div class="hero-photo">
+                <img src="IMG_7424 (Copie).JPG" alt="Photo de Glory">
+            </div>
+            <div class="hero-info">
+                <h1>NGALEU YAMDJA GLORY</h1>
+                <p>Étudiante en informatique | Future ingénieure en génie logiciel</p>
+                <a href="https://wa.me/237695213429" target="_blank" class="btn">Me contacter</a>
+            </div>
+        </div>
+     <div class="socials">
+    <a href="https://github.com/NG7133" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/Glory Ngaleu" target="_blank">LinkedIn</a>
+    <a href="mailto:gloryngaleu76@gmail.com">Email</a>
+</div>  
     </section>
-    <section id="competences">
-        <h2>Competences</h2>
+    <div class="grid-container">
 
-        <ul>
-            <li>HTML</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Travail en equipe</li>
+        <section id="apropos" class="grid-item">
+            <h2>À propos</h2>
+            <p>Je suis une étudiante en informatique passionnée par le développement web et le génie logiciel.</p>
+            <p>Mon objectif est de devenir ingénieure en génie logiciel et de concevoir des applications modernes et
+                performantes.</p>
+        </section>
 
-        </ul>
-    </section>
-    <section id="parcours">
-        <h2>Parcours</h2>
-        <table border="1">
+        <section id="competences" class="grid-item">
+            <h2>Mes compétences</h2>
+            <div class="hello">
+                <div class="skill">
+                    <h3>HTML</h3>
+                    <p>Je maîtrise la création de la structure complète d’un site web et l’intégration de contenus.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-filetype-html" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z" />
+                    </svg>
+                    <div class="bar">
+                        <div class="progress" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>CSS</h3>
+                    <p>Stylisation et mise en page avec Flexbox et animations simples.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-css"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V0zM4.59 7.498q-.908 0-1.455.508-.547.507-.547 1.484v3.106q0 .986.527 1.484t1.406.498q.576 0 1.016-.224.45-.225.703-.674.255-.45.254-1.114v-.185h-1.22v.176q0 .449-.186.683t-.527.235q-.372-.01-.557-.264-.186-.255-.186-.752V9.686q0-.547.166-.811.177-.264.577-.264.321 0 .517.225.195.224.195.693v.205h1.23V9.52q0-.674-.243-1.124a1.55 1.55 0 0 0-.664-.673q-.42-.225-1.006-.225m4.214-.01q-.586 0-1.006.244a1.67 1.67 0 0 0-.635.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.304.42.967.732l.469.215q.44.186.625.43.186.244.186.635 0 .478-.166.703-.157.224-.528.224-.36 0-.547-.244-.185-.243-.205-.752H6.87q.02.996.498 1.524.479.527 1.387.527t1.416-.518.508-1.484q0-.81-.332-1.289-.333-.479-1.045-.79l-.45-.196q-.39-.166-.556-.381-.165-.214-.166-.576 0-.4.166-.596.175-.195.508-.195.36 0 .508.234.156.234.175.703h1.123q-.03-.976-.498-1.484-.468-.518-1.308-.518m4.057 0q-.585 0-1.006.244a1.67 1.67 0 0 0-.634.674 2.1 2.1 0 0 0-.225.996q0 .753.293 1.182.303.42.967.732l.469.215q.438.186.625.43.185.244.185.635 0 .478-.166.703-.156.224-.527.224-.361.001-.547-.244-.186-.243-.205-.752h-1.162q.02.996.498 1.524.479.527 1.386.527.909 0 1.417-.518.507-.517.507-1.484 0-.81-.332-1.289t-1.045-.79l-.449-.196q-.39-.166-.556-.381-.166-.214-.166-.576 0-.4.165-.596.177-.195.508-.195.361 0 .508.234.156.234.176.703h1.123q-.03-.976-.498-1.484-.47-.518-1.309-.518" />
+                    </svg>
+                    <div class="bar">
+                        <div class="progress" data-width="70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Git & GitHub</h3>
+                    <p>Gestion de versions et collaboration sur des projets en ligne.</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    <div class="bar">
+                        <div class="progress" data-width="65%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <tr>
-                <th>Annee</th>
-                <th>Formation / Activite</th>
-            </tr>
-            <tr>
-                <td>2024</td>
-                <td>Baccalaureat</td>
-            </tr>
-            <tr>
-                <td>2025</td>
-                <td>informatique L1</td>
-            </tr>
-            <tr>
-                <td>2026</td>
-                <td> informatique L2 / Formation</td>
-            </tr>
+        <section id="projets" class="grid-item">
+            <h2>Mes projets</h2>
+            <div class="yoll">
+            <div class="projet">
+                <h3>Portfolio personnel</h3>
+                <p>Création d’un site web pour présenter mon profil et mes compétences.</p>
+            </div>
+            <div class="projet">
+                <h3>Site vitrine</h3>
+                <p>Site pour une entreprise fictive avec design et contenu structuré.</p>
+            </div>
+            <div class="projet">
+                <h3>Application web (en cours)</h3>
+                <p>Application pour faciliter la gestion des activités d’une entreprise locale.</p>
+            </div>
+            </div>
+        </section>
 
-        </table>
-    </section>
-    <section id="contact">
+        <section id="parcours" class="grid-item">
+            <h2>Mon parcours</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>2024</h4>
+                    <p>Baccalauréat</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2025</h4>
+                    <p>Licence 1 Informatique</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2026</h4>
+                    <p>Licence 2 Informatique</p>
+                </div>
+            </div>
+        </section>
 
-        <h2>Contact</h2>
+        <section id="contact" class="grid-item">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
 
-        <form>
-            <label for="nom">Nom :</label>
-            <input type="text" id="nom" name="nom">
+    </div>
 
-            <br><br>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email">
-
-            <br><br>
-            <label for="message">Message :</label>
-            <textarea id="message" name="message"></textarea>
-
-            <br><br>
-
-            <button type="submit">Envoyer</button>
-               </form>
-    </section>
-</body>
-<footer>
-    <p>@2026 - portfolio de NGALEU YAMDJA GLORY</p>
+    <footer>
+        <p>© 2026 - Portfolio de NGALEU YAMDJA GLORY<
 </footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
